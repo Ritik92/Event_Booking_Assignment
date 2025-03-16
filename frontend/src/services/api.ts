@@ -1,6 +1,6 @@
 import { Event } from '../types';
 
-const API_URL = 'http://localhost:8080/api/events';
+const API_URL = 'https://event-booking-backend-production.up.railway.app/api/events';
 
 export const getEvents = async (): Promise<Event[]> => {
   const response = await fetch(API_URL);
