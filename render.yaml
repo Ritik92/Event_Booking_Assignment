@@ -1,10 +1,5 @@
 services:
   - type: web
     name: event-booking-backend
-    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
     plan: free
-    buildCommand: cd backend && ./mvnw clean package -DskipTests
-    startCommand: cd backend && java -jar target/*.jar
-    envVars:
-      - key: JAVA_VERSION
-        value: 17
