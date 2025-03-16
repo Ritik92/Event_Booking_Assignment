@@ -2,5 +2,5 @@ services:
   - type: web
     name: event-booking-backend
     env: docker
-    dockerfilePath: ./backend/Dockerfile
+    dockerfilePath: backend/Dockerfile
     plan: free
