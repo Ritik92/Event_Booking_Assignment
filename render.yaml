@@ -1,7 +1,7 @@
 services:
   - type: web
     name: event-booking-backend
-    runtime: java
+    runtime: docker
     plan: free
     buildCommand: cd backend && ./mvnw clean package -DskipTests
     startCommand: cd backend && java -jar target/*.jar
